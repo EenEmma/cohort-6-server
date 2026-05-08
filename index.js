@@ -1,11 +1,21 @@
+//import express
 const express = require('express');
+//cors
+const cors = require ('cors');
+//mongoose
+const mongoose = require('mongoose')
+mongoose.connect("mongdb://localhost:27017/AuthenticationDB")
+.then (() => console.log("MongoDB connected"))
+.catch(err => console.error("Connection Error: ", err))
 
+//create express app
 const app = express();
+const port = 7777;
+app.use(cors());
 app.use(express.json())
 
-const port = 8080;
-app.get("/" , (request , response)=>{
-    response.send("Server is up and running")
+app.get("/" , (req , res)=>{
+  response.send("api is ready for use")
 })
 
 // Simulated in-memory database

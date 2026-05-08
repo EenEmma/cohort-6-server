@@ -9,8 +9,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^5.2.1"
-  }
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EenEmma/cohort-6-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EenEmma/cohort-6-server/issues"
+  },
+  "homepage": "https://github.com/EenEmma/cohort-6-server#readme",
+  "description": ""
 }
